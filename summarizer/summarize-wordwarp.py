@@ -46,8 +46,18 @@ def summarize(file:str):
     return {"date": date, "url": url, "title": title, "summary": value["values"]["summary"], "related_symbols":value["values"]["related_symbols"], "industry":value["values"]["industry"]}
 
 def main():
-    summary = summarize('./data/2024-03-16-news1.txt')
-    print(summary)
+    summary1 = summarize('./data/2024-03-16-news1.txt')
+    summary2 = summarize('./data/2024-03-16-news2.txt')
+
+    summary3 = summarize('./data/2024-03-16-news3.txt')
+
+    print(summary1['related_symbols'])
+    print(summary2['related_symbols'])
+
+    print(summary3['related_symbols'])
+
 
 if __name__ == '__main__':
     main()
+
+
