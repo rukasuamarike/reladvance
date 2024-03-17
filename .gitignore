@@ -23,6 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# python packages
+venv
 # local env files
 .env.local
 .env.development.local

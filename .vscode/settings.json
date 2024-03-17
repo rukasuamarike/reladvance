@@ -1,5 +1,6 @@
 {
   "tailwindCSS.experimental.classRegex": [
     ["cva(?:<[^>]*>)?(([^)]*))", "[\"'`]([^\"'`]*).*?[\"'`]", "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]"]
-  ]
+  ],
+  "python.pythonPath": "/Users/saichi/anaconda3/bin/python"
 }
