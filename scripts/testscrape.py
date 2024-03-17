@@ -25,10 +25,10 @@ def writefile(url,text):
         file.write(text)
     print(f"Text content saved to {parsed_url}.txt")
 urls=[
-https://finance.yahoo.com/news/germany-france-lead-call-eib-172227489.html,
-https://finance.yahoo.com/news/why-under-armour-founder-kevin-plank-is-the-wrong-choice-for-ceo-123012988.html,
-https://finance.yahoo.com/news/with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html,
-https://finance.yahoo.com/news/with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html,
+"https://finance.yahoo.com/news/germany-france-lead-call-eib-172227489.html",
+"https://finance.yahoo.com/news/why-under-armour-founder-kevin-plank-is-the-wrong-choice-for-ceo-123012988.html",
+"https://finance.yahoo.com/news with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html",
+"https://finance.yahoo.com/news/with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html",
 ]
 for i in urls:
     url=i
