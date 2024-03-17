@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.newsItem {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.newsImage img {
+    max-width: 150px; /* Adjust based on your preference */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.newsItem p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.newsItem:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.upArrow {
+    color: green;
+}
+
+.downArrow {
+    color: red;
+}
+
+.newsSummary {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.newsDetails {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.newsTick {
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: #eee;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.newsLink {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.updownIcon {
+    font-size: 20px; /* Adjust the size as needed */
+    margin-right: 5px;
+}
+
+.newsImage {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.newsParagraph {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+#selectedTicksContainer {
+    margin-bottom: 20px;
+}
+
+.selectedTick {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.selectedTick button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+#ticksAndInputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#selectedTicksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputArea {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the input area to the right */
+    padding: 0 10px;
+}
+
+.inputField {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.selectedTick {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.selectedTick button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced News Preview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="ticksAndInputContainer">
+        <div id="selectedTicksContainer">
+            <!-- Selected ticks will be displayed here -->
+        </div>
+        <div class="inputArea">
+            <input type="text" id="tickInput" class="inputField" placeholder="Enter tick, e.g., XYZ">
+            <button onclick="addTick()" class="submitButton">Add Tick</button>
+        </div>
+    </div>
+    <div id="newsContainer">
+        <!-- News previews will be dynamically added here -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

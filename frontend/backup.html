@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #newsContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .newsItem {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .newsSummary {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .newsTick {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .newsSentiment {
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .newsLink {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .newsLink:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="newsContainer">
+        <!-- News previews will be added here dynamically -->
+    </div>
+    <script>
+        const dummyData = [
+            {
+                "summary": "Tech giant XYZ reports a groundbreaking innovation in AI, leading to a surge in stock prices.",
+                "url": "https://example.com/news/xyz-ai-innovation",
+                "tick": "XYZ",
+                "updown": "Prediction: up 15%",
+                "date": "2024-03-17"
+            },
+            {
+                "summary": "Automobile manufacturer ABC faces a recall scandal, affecting its stock negatively.",
+                "url": "https://example.com/news/abc-recall-scandal",
+                "tick": "ABC",
+                "updown": "Prediction: down 8%",
+                "date": "2024-03-16"
+            },
+            {
+                "summary": "Retail giant MNO's quarterly earnings surpass expectations, driving up its stock.",
+                "url": "https://example.com/news/mno-earnings-surprise",
+                "tick": "MNO",
+                "updown": "Prediction: up 10%",
+                "date": "2024-03-15"
+            },
+            {
+                "summary": "Energy company DEF's new renewable energy project sets a benchmark in the industry.",
+                "url": "https://example.com/news/def-renewable-project",
+                "tick": "DEF",
+                "updown": "Prediction: up 20%",
+                "date": "2024-03-14"
+            },
+            {
+                "summary": "Tech startup GHI's IPO is met with mixed reactions amid market volatility.",
+                "url": "https://example.com/news/ghi-ipo-mixed-reactions",
+                "tick": "GHI",
+                "updown": "Prediction: down 5%",
+                "date": "2024-03-13"
+            }
+        ];
+
+        const newsContainer = document.getElementById('newsContainer');
+
+        function displayNews(newsItems) {
+            const newsContainer = document.getElementById('newsContainer');
+            newsContainer.innerHTML = ''; // Clear current news
+
+            newsItems.forEach(item => {
+                const newsElement = document.createElement('div');
+                newsElement.className = 'newsItem';
+                const updownSymbol = item.updown === 'up' ? '&#x25B2;' : '&#x25BC;';
+                const updownColor = item.updown === 'up' ? 'upArrow' : 'downArrow';
+                newsElement.innerHTML = `
+                    <div class="newsImage"><img src="${item.image}" alt="News Image" style="width:100%;"></div>
+                    <div class="newsSummary">${item.summary}</div>
+                    <p>${item.paragraph}</p>
+                    ${item.ticks.map(tick => `<span class="newsTick">Related to: ${tick}</span>`).join(' ')}
+                    <div class="newsDetails">
+                        <span class="${updownColor}">${updownSymbol} Sentiment: Prediction: ${item.prediction}</span>
+                        <span class="newsDate">${item.date}</span>
+                    </div>
+                    <a href="${item.url}" target="_blank" class="newsLink">Read full article</a>
+                `;
+                newsContainer.appendChild(newsElement);
+            });
+        }
+
+
+        displayNews(dummyData);
+    </script>
+</body>
+</html>

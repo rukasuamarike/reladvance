@@ -1,0 +1,180 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Enhanced News Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .inputArea {
+            margin-bottom: 20px;
+        }
+
+        .inputField {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .submitButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+
+        #newsContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .newsItem {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .newsSummary {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .newsDetails {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .newsTick {
+            font-weight: bold;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .newsDate {
+            font-style: italic;
+        }
+
+        .newsLink {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .updownIcon {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputArea">
+        <input type="text" id="tickInput" class="inputField" placeholder="Enter tick, e.g., XYZ">
+        <button onclick="addTick()" class="submitButton">Add Tick</button>
+    </div>
+    <div id="newsContainer">
+        <!-- News previews will be dynamically added here -->
+    </div>
+    <script>
+        let selectedTicks = [];
+
+        const dummyData = [
+            {
+                "summary": "Tech giant XYZ reports a groundbreaking innovation in AI, leading to a surge in stock prices.",
+                "url": "https://example.com/news/xyz-ai-innovation",
+                "tick": "XYZ",
+                "updown": "Prediction: up 15%",
+                "date": "2024-03-17"
+            },
+            {
+                "summary": "Automobile manufacturer ABC faces a recall scandal, affecting its stock negatively.",
+                "url": "https://example.com/news/abc-recall-scandal",
+                "tick": "ABC",
+                "updown": "Prediction: down 8%",
+                "date": "2024-03-16"
+            },
+            {
+                "summary": "Retail giant MNO's quarterly earnings surpass expectations, driving up its stock.",
+                "url": "https://example.com/news/mno-earnings-surprise",
+                "tick": "MNO",
+                "updown": "Prediction: up 10%",
+                "date": "2024-03-15"
+            },
+            {
+                "summary": "Energy company DEF's new renewable energy project sets a benchmark in the industry.",
+                "url": "https://example.com/news/def-renewable-project",
+                "tick": "DEF",
+                "updown": "Prediction: up 20%",
+                "date": "2024-03-14"
+            },
+            {
+                "summary": "Tech startup GHI's IPO is met with mixed reactions amid market volatility.",
+                "url": "https://example.com/news/ghi-ipo-mixed-reactions",
+                "tick": "GHI",
+                "updown": "Prediction: down 5%",
+                "date": "2024-03-13"
+            }
+        ];
+
+        function addTick() {
+            const tickInput = document.getElementById('tickInput');
+            const tick = tickInput.value.toUpperCase().trim();
+            if (tick && !selectedTicks.includes(tick)) {
+                selectedTicks.push(tick);
+                fetchAndDisplayNews(); // Simulate fetching news for the new tick set
+            }
+            tickInput.value = ''; // Clear the input field
+        }
+
+        function fetchAndDisplayNews() {
+            // Filter dummyData for selectedTicks
+            const filteredNews = dummyData.filter(newsItem => 
+                newsItem.ticks.some(tick => selectedTicks.includes(tick))
+            );
+            displayNews(filteredNews);
+        }
+
+        function displayNews(newsItems) {
+            const newsContainer = document.getElementById('newsContainer');
+            newsContainer.innerHTML = ''; // Clear current news
+
+            newsItems.forEach(item => {
+                const newsElement = document.createElement('div');
+                newsElement.className = 'newsItem';
+                newsElement.innerHTML = `
+                    <div class="newsSummary">${item.summary}</div>
+                    ${item.ticks.map(tick => `<span class="newsTick">${tick}</span>`).join('')}
+                    <div class="newsDetails">
+                        <img src="${item.updown === 'up' ? 'path/to/up-icon.png' : 'path/to/down-icon.png'}" alt="${item.updown}" class="updownIcon">
+                        <span class="newsDate">${item.date}</span>
+                    </div>
+                    <a href="${item.url}" target="_blank" class="newsLink">Read full article</a>
+                `;
+                newsContainer.appendChild(newsElement);
+            });
+        }
+
+        // Initial display with all dummy data
+        fetchAndDisplayNews(); // Uncomment this line if you want to display news for all ticks initially
+    </script>
+</body>
+</html> -->
