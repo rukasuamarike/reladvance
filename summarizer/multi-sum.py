@@ -1,6 +1,9 @@
 import json
 import requests
 import os
+
+
+
 def summarize(file:str):
     prompt_id = "6cd41f67-5110-4340-b1e9-650e55cac2f2"
     api_key = "sk-2rJzAVtTE5tGIqel6MPokRwRGWxxLdItuQ7FZwMZjhS8ufTnmdJZx5"
@@ -43,7 +46,7 @@ def summarize(file:str):
         if value['type'] != "outputs":
             continue
 
-    return {"date": date, "url": url, "title": title, "summary": value["values"]["summary"], "related_symbols":value["values"]["related_symbols"], "industry":value["values"]["industry"]}
+    return {"date": date, "url": url, "title": title, "summary": value["values"]["summary"], "related_symbols":value["values"]["related_symbols"], "industry":value["values"]["industry"], "sentiment":value["values"]["sentiment"]}
 
 def main():
     files=os.listdir('./data')
