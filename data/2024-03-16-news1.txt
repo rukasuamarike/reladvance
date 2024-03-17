@@ -1,0 +1,38 @@
+date: 2024-03-16
+url: https://finance.yahoo.com/news/nvidias-jensen-huang-feds-powell-020913577.html
+title: Nvidia's Jensen Huang, Fed's Powell may rock markets this week
+Suddenly and surprisingly, markets ended the past week with traders feeling uneasy.
+There was a bit to feel uneasy about:
+The mammoth rally in Nvidia  (NVDA)  shares  seemed to stall just as $1,000 a share seemed a possibility.
+The major stock-market averages fell back for a second week in a row. (The Dow Jones industrials fell for a third week.)
+Oil prices climbed nearly 4% as worries grew about the brutality of wars in the Middle East and between Russia and Ukraine.
+Interest rates were moving higher, dashing homebuyer hopes for a thaw in mortgage rates.
+The pullback in markets surprised because stocks had enjoyed a huge rebound starting at the end of October.
+The S&P 500 soared 26% to an all-time closing high of 5,175 on March 12. It's off 1.1% since. Markets do this regularly.
+Bitcoin reminded investors that sentiment can change on a dime. After rising 7.2% from March 9 to $73,463 on March 13, the cryptocurrency fell 9% in less than three days to $66,916. It's still up 57% for the year.
+There were reasons for the pullback besides stocks rising too far, too fast.
+Inflation reports were stronger than expected in part because of rising oil prices. U.S. gasoline prices are up 11% so far this year. Gasoline prices typically rise in advance of the summer driving season.
+How long all this investor unease will last may may depend on how investors react to two events this week:
+Nvidia holds its annual developer conference starting Monday.
+The Federal Reserve holds an important meeting on interest rates Tuesday and Wednesday.
+## Nvidia conference talks about all things AI
+The Nvidia GTC AI opens Monday afternoon in San Jose, Calif. (GTC stands for GPU Technology Conference.)
+CEO Jensen Huang will deliver the keynote address and may offer attendees a first look at its newest products, including its next generation B100 GPU for AI and high-performance computing applications.
+The products, part of Nvidia's new generation Blackwell architecture, won't be available for some time.
+But given Nvidia's influence on technology and financial markets, the interest in any information on what's coming will be strong. Specifics could buoy Nvidia's shares.
+The shares are up 77.4% on the year after rising 238% in 2023. But they fell 9.8% from their $974 all-time high on March 8 through to Friday's close of $878.36.
+The week will include some 900 different events on how to use artificial intelligence in various setting plus 300-plus exhibits and 20 workshops. Some will attend the event live at the San Jose Convention Center. Others will view the presentations online.
+The schedule includes sessions on developing autonomous vehicles as well as using AI in medical research and in developing new drugs and medical research.
+The company started to hold these events in 2009. In 2018, the event attracted 8,400 people either in person or online. The 2023 event counted more than 75,000 attendees.
+## When will the Fed cut rates?
+The Fed starts a two-day meeting on Tuesday. On Wednesday, it is expected to announce leaving its key federal funds rate alone. The rate now is at 5.25% to 5.5%. That translates into mortgage rates at just above 7.1% or so.
+What investors really want from Chairman Jerome Powell is some clarity on when the central bank will finally start to cut the rate. (Banks use the rate to lend each other money to meet regulatory requirements. It serves as the base rate for all U.S. rates.)
+Futures markets are projecting a rate cut in July. But the projection is no better than a guess. Investors will pay attention to the so-called dot-plot: projections from the 19 members of the Fed's rate making committee on where they expect rates to go and when.
+The dot plot isn't an official forecast. But it gives a snapshot on where the Fed stands.
+People involved in a number of economic sectors are keenly interested in the question, especially real estate and housing, agriculture, energy and retail.
+The Fed statement won't answer the question directly. Powell, however, will be buffeted at his post-meeting news conference. He has to take care in word choice. Any hint rates will stay high or higher for longer than expected could cause stocks to slump.
+## Two more reports to watch
+Housing takes a turn in the spotlight this coming week.
+On Tuesday, the Commerce Department reports on housing starts. The consensus estimate is a seasonally adjusted annual rate of 1.44 million units, up from 1.33 million units a year ago.
+On Thursday, the National Association of Realtors releases its February report on existing home sales. Sales of existing homes represent the bulk of U.S. home sales. The estimate is an annualized 3.95-million home-sale rate, off slightly from January's 4-million unit rate.
+The most important earnings of the week come Thursday from Nike  (NKE)  and package shipper FedEx  (FDX) .
