@@ -1,3 +1,4 @@
+import pickle
 from sentence_transformers import SentenceTransformer, util
 import torch
 
@@ -12,6 +13,18 @@ corpus = [
     "PEAR",
 ]
 corpus_embeddings = embedder.encode(corpus, convert_to_tensor=True)
+
+
+# Store sentences & embeddings on disc
+with open("embeddings.pkl", "wb") as fOut:
+    pickle.dump({"corpus": corpus, "embeddings": corpus_embeddings}, fOut, protocol=pickle.HIGHEST_PROTOCOL)
+
+# Load sentences & embeddings from disc
+with open("embeddings.pkl", "rb") as fIn:
+    stored_data = pickle.load(fIn)
+    stored_sentences = stored_data["corpus"]
+    stored_embeddings = stored_data["embeddings"]
+
 
 # Query sentences:
 queries = [
