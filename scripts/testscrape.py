@@ -25,11 +25,11 @@ def writefile(url,text):
         file.write(text)
     print(f"Text content saved to {parsed_url}.txt")
 urls=[
-"https://finance.yahoo.com/news/germany-france-lead-call-eib-172227489.html",
-"https://finance.yahoo.com/news/why-under-armour-founder-kevin-plank-is-the-wrong-choice-for-ceo-123012988.html",
-"https://finance.yahoo.com/news with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html",
-"https://finance.yahoo.com/news/with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html",
-]
+"https://seekingalpha.com/news/4080282-ubs-is-seeking-to-expand-us-wealth-business-through-ma-swiss-news-report",
+"https://seekingalpha.com/news/4080281-shift4-ceo-said-to-reject-buyout-bids-as-too-low",
+"https://seekingalpha.com/news/4080238-largest-us-grid-could-see-58-gw-of-power-generation-shut-by-2030-report-warns",
+"https://seekingalpha.com/news/4080035-earnings-week-ahead-fedex-nike-xpeng-tencent-general-mills-and-more",
+"https://seekingalpha.com/news/4080280-boeing-leads-weekly-declines-among-large-cap-industrials"]
 for i in urls:
     url=i
     text = scrape_text(url)
