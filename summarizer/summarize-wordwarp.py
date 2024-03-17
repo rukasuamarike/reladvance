@@ -48,16 +48,36 @@ def summarize(file:str):
 def main():
     summary1 = summarize('./data/2024-03-16-news1.txt')
     summary2 = summarize('./data/2024-03-16-news2.txt')
-
     summary3 = summarize('./data/2024-03-16-news3.txt')
 
-    print(summary1['related_symbols'])
-    print(summary2['related_symbols'])
+    # Concatenate the related symbols into a single string, with each on a new line
+    summaries_str = f"{summary1}\n{summary2}\n{summary3}"
+    
+    # Print the related symbols
+    print(summaries_str)
+    
+    # Save the summaries to a file
+    with open('summaries.txt', 'w') as file:
+        file.write(summaries_str)
 
-    print(summary3['related_symbols'])
+import os
+# def main():
+#     data_directory = './data/'
+#     # List all text files in the specified directory
+#     txt_files = [f for f in os.listdir(data_directory) if f.endswith('.txt')]
+    
+#     # Iterate over each file and summarize
+#     for file_name in txt_files:
+#         file_path = os.path.join(data_directory, file_name)
+#         summary = summarize(file_path)
+#         print(summary)
+        # print(f"Related symbols for {file_name}: {summary['related_symbols']}")
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
+
+
+# if __name__ == '__main__':
+#     main()
 
 
