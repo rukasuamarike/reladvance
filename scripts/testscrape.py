@@ -24,7 +24,13 @@ def writefile(url,text):
     with open(f"../data/{parsed_url}.txt", "w", encoding="utf-8") as file:
         file.write(text)
     print(f"Text content saved to {parsed_url}.txt")
-
-url=str(sys.argv[1])
-text = scrape_text(url)
-writefile(url,text)
+urls=[
+https://finance.yahoo.com/news/germany-france-lead-call-eib-172227489.html,
+https://finance.yahoo.com/news/why-under-armour-founder-kevin-plank-is-the-wrong-choice-for-ceo-123012988.html,
+https://finance.yahoo.com/news/with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html,
+https://finance.yahoo.com/news/with-food-inflation-still-hot-consumers-turn-to-buy-now-pay-later-to-buy-groceries-and-takeout-140000942.html,
+]
+for i in urls:
+    url=i
+    text = scrape_text(url)
+    writefile(url,text)
