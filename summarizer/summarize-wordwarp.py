@@ -3,8 +3,9 @@ import requests
 
 
 def main():
-    prompt_id = "xxxxxxxx"
-    api_key = "xxxxxxxx"
+    prompt_id = "6cd41f67-5110-4340-b1e9-650e55cac2f2"
+    api_key = "sk-2rJzAVtTE5tGIqel6MPokRwRGWxxLdItuQ7FZwMZjhS8ufTnmdJZx5"
+
 
     # Describe the prompt (shows just the inputs for now)
     r1 = requests.get(f"https://app.wordware.ai/api/prompt/{prompt_id}/describe",
