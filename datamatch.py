@@ -28,12 +28,18 @@ for file_name in files:
     # Find matching URL for the file
     f1=re.sub(r'-', '/', file_name, 1)
     f2=re.sub(r'-', '/', file_name, 2)
+    f1e2= f1[:-4] in file_name
+    namespace=re.sub(r'-', ' ', file_name[5:]) if f1e2 else re.sub(r'-', ' ', file_name[13:]) 
+    
+        
     matching_urls = [url.strip() for url in urls if (f1[:-4] in url or f2[:-4] in url)]
     # Print matched file names and URLs
     for url in matching_urls:
         print((file_name, url))
     # Append matching URLs to the file
     for url in matching_urls:
+        append_to_file(file_path, f"date: 2024-03-17\n")
         append_to_file(file_path, f"url: {url}\n")
+        append_to_file(file_path, f"title: {namespace[:-4]}\n")
 print(matching_urls)
 
